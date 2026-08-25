@@ -888,7 +888,7 @@ footer{
   <div class="about-grid">
     <div>
       <p class="about-bio">
-        ML Engineer with <strong>2+ years</strong> building production GenAI systems
+        ML Engineer with <strong> 3.4+ years</strong> building production GenAI systems
         RAG pipelines, LLM powered workflows, and multi-agent orchestration.
         At <strong>Odoo India</strong>, shipped NLP search infrastructure handling
         thousands of documents daily and integrated LLMs into core business flows.
@@ -902,7 +902,7 @@ footer{
       </div>
       <div class="stat-row">
         <div class="stat-card">
-          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-num" data-target="3">0</span>
           <span class="stat-lbl">Years Prod ML</span>
         </div>
         <div class="stat-card">
@@ -1145,11 +1145,12 @@ footer{
           <span class="tl-role">Machine Learning Engineer</span>
           <span class="tl-date">Jan 2026 – July2026</span>
         </div>
-        <div class="tl-company">Amazo Healthcare · Remote</div>
+        <div class="tl-company">Freelancing · Remote</div>
         <ul class="tl-bullets">
-          <li>Architected end-to-end pipeline to extract structured data from unstructured financial documents (PDFs, scanned invoices) into Excel templates replaced a <strong>4+ hour</strong> manual workflow</li>
-          <li>Integrated <strong>GPT-4o</strong> via function calling, deployed on AWS Lambda with S3 event triggers for serverless scalable processing</li>
-          <li>Iterated on extraction schemas with clients across <strong>3 feedback cycles</strong>, reducing post-processing correction rate by 5%</li>
+          <li>Engineered end-to-end pipeline to extract structured data from unstructured financial documents (PDFs, scanned invoices) into predefined Excel templates replaced a fully manual workflow taking analysts <strong>4+ hours per batch</strong></li>
+          <li>Architected multi-step <strong>LangChain</strong> agent orchestration with <strong>LangSmith tracing</strong>, giving full visibility into every step from retrieval to final response cut debugging time on failed queries from an hour to <strong>10 min</strong></li>
+          <li>Built a <strong>DeepEval</strong>-based evaluation suite applying RAG triad metrics (context relevance, faithfulness, answer relevance) to catch groundedness failures and hallucinated fields before reaching production</li>
+          <li>Replaced fixed-size chunking with <strong>late chunking</strong> embedding full documents through a long-context model before segmenting token-level embeddings preserved cross-chunk semantic dependencies and cut retrieval/generation costs</li>
         </ul>
       </div>
     </div>
@@ -1163,10 +1164,11 @@ footer{
         </div>
         <div class="tl-company">Odoo India Pvt. Ltd. · Gandhinagar</div>
         <ul class="tl-bullets">
-          <li>Built semantic search over PostgreSQL records and PDF attachments using NLP-based indexing cut retrieval time by <strong>60%</strong></li>
-          <li>Designed LLM integration pipelines (ingestion → cleaning → validation → inference) to embed language models into daily business workflows</li>
-          <li>Optimized PostgreSQL query execution rewrote joins and added targeted indexes resulting in <strong>30% throughput improvement</strong> on bulk operations</li>
-          <li>Delivered <strong>&gt;85% unit test coverage</strong> across all custom Python modules, cutting regression incidents by more than half</li>
+          <li>Built a <strong>HNSW</strong> search system over PostgreSQL records and PDF attachments using NLP-based indexing cut information retrieval time by <strong>60%</strong> and surfaced previously unsearchable unstructured content</li>
+          <li>Designed LLM integration pipelines (ingestion → cleaning → feature validation → inference) to embed language models into daily business workflows wrote the preprocessing logic that made model outputs reliable enough to deploy</li>
+          <li>Built a <strong>RAG pipeline</strong> for support ticket resolution classifies query intent, retrieves context under role-based access control, and runs a hallucination check on its own output before sending a reply handling <strong>1000+ tickets/day</strong></li>
+          <li>Delivered <strong>&gt;85% unit test coverage</strong> across all custom Python modules using unittest, cutting regression incidents by more than half over the next two deployment cycles</li>
+          <li>Hardened the RAG pipeline against <strong>prompt injection</strong> by isolating retrieved context from system instructions and validating tool-call outputs before execution, reducing risk of unauthorized data access through crafted queries</li>
         </ul>
       </div>
     </div>
@@ -1538,7 +1540,7 @@ function animateTerminal(){
     {p:'$ ', t:'whoami'},
     {p:'', t:'→ Shubham Patel · ML Engineer'},
     {p:'$ ', t:'cat experience.txt'},
-    {p:'', t:'→ 2+ yrs production ML · Odoo · Freelance'},
+    {p:'', t:'→ 3+ yrs production ML · Odoo · Freelance'},
     {p:'$ ', t:'kaggle --rank'},
     {p:'', t:'→ Notebook Expert · Top 7% globally · 1000+ views'},
     {p:'$ ', t:'git log --stat | head'},
